@@ -1,0 +1,39 @@
+header{
+    padding-top:80px;
+}
+.container{
+    width:1280px;
+    margin:auto; /* place div in the center */
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    padding:0;
+    /* gap: 20px; */
+}
+.menu a{
+    color: var(--Dark-gray, #272042);
+    /* Normal */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+    padding:10px 30px;
+    text-decoration: none; /* get rid of underline */
+    transition: all 0.3s;
+}
+.menu a:hover{
+    color:  #75BF7A;
+}
+.menu .btn-help{
+    border-radius: 5px;
+    background: var(--Green, #75BF7A);
+    color:white;
+}
+.menu .btn-help:hover{
+    color: white;
+    background-color: black;
+}

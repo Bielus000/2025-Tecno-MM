@@ -1,0 +1,28 @@
+section{
+    background-color:rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    padding:30px; /* internal space (between border and content) */
+    margin:30px auto; /* external space (between border and others*/
+    width: 70%;
+}
+.flex ul{
+    border:1px solid black;
+    padding: 0;
+    list-style:none; /* to remove dots */
+    display:flex; /* all items inside will be side by side */
+    justify-content: space-around;
+}
+.flex li{
+    border: 1px solid red;
+    padding:10px 30px;
+}
+.gallery{
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* fr is a fraction */
+    gap:30px; /* space between elements */
+}
+.gallery .photo{
+    border:1px solid brown;
+    aspect-ratio: 1;
+}

@@ -1,0 +1,28 @@
+
+
+header{
+    padding-top:80px;
+}
+.container{
+    width: 1200px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    padding:0;
+    list-style: none;
+}
+header li{
+    padding:5px 30px;
+}
+header a{
+    color: var(--Dark-gray, #272042);
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+    text-decoration: none; /* treure subratllat */
+}

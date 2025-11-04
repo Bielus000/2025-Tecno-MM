@@ -1,0 +1,36 @@
+section{
+    width:80%;
+    border:1px solid black;
+    
+    margin:30px; /* marge a tot arreu top, right, bottom, left*/
+    margin:30px auto 0;
+    margin:30px 10px 20px 5px;
+    margin:30px auto; /* marge de 30px top/bottom, auto left/right */
+    border-radius: 10px;
+}
+
+.flex ul{
+    border:1px solid green;
+    padding:0; /* padding és un marge intern*/
+    list-style:none;
+    display:flex; /* Col.loca els elements un al costat de l'altre*/
+    justify-content: center;
+}
+.flex li{
+    border: 1px solid red;
+    padding:10px 30px;
+}
+
+.grid{
+    padding:20px;
+}
+.grid .gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.grid .photo{
+    border:1px solid pink;
+    
+}
+
