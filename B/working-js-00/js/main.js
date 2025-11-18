@@ -23,6 +23,7 @@ console.log("Color inicial", color);
 // crear una variable de la etiqueta body
 let body = document.querySelector("body");
 let button = document.querySelector(".canviColor");
+let stopButton = document.querySelector(".stop-btn");
 
 // canviar l'estil del cos de la pagina
 body.style.backgroundColor = color;
@@ -46,7 +47,11 @@ console.log("El meu nom és " + nom + ", benvingut/da al curs de JavaScript.");
 // setTimeout per cridar una funció després d'un temps
 //setTimeout(canviaColorFons, 5000); // cridem la funció després de 2 segons
  
-setInterval(canviaColorFons, 3000); // cridem la funció cada 3 segons
+let intervalColor = setInterval(canviaColorFons, 300); // cridem la funció cada 3 segons
+
+stopButton.addEventListener("click", function(){
+  clearInterval(intervalColor);
+});
 
 function canviaColorFons() {
   let red = Math.floor(Math.random()*256);

@@ -16,7 +16,7 @@ button:active{transform:translateY(1px)}
 #output{margin-top:.5rem}
 
 /* Estils per al botó STOP centrat i gran */
-.stop-wrapper{
+.S-B{
   display:flex;
   align-items:center;
   justify-content:center;
