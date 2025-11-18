@@ -7,10 +7,40 @@
 html,body{height:100%;}
 body{
   font-family:Segoe UI, Roboto, Arial, sans-serif;
-  transition: all 1s;
+  transition: all 0.3s;
 }
 header{max-width:800px;margin-bottom:1rem}
 h1{color:var(--accent);margin:0}
 button{background:var(--accent);color:#fff;border:0;padding:.5rem 1rem;border-radius:4px;cursor:pointer}
 button:active{transform:translateY(1px)}
 #output{margin-top:.5rem}
+
+/* Estils per al botó STOP centrat i gran */
+.stop-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2.5rem 1rem;
+}
+#stop-btn{
+  background:#ff2b2b;
+  color:#fff;
+  border:0;
+  padding:1.25rem 2.5rem;
+  font-weight:800;
+  font-family:inherit;
+  text-transform:uppercase;
+  letter-spacing:0.12em;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.18);
+  cursor:pointer;
+  transition:transform .12s ease,box-shadow .12s ease,filter .12s ease;
+  font-size:clamp(2.4rem, 8vw, 5.5rem);
+  line-height:1;
+  min-width:12ch;
+  display:inline-block;
+  text-align:center;
+}
+#stop-btn:hover{transform:translateY(-6px) scale(1.02);filter:brightness(1.03);box-shadow:0 16px 44px rgba(0,0,0,0.24)}
+#stop-btn:active{transform:translateY(0) scale(.99)}
+#stop-btn:focus{outline:3px solid rgba(255,43,43,0.15);outline-offset:4px}

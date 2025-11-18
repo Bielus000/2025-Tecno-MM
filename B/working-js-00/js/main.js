@@ -31,7 +31,27 @@ body.style.backgroundColor = color;
 // boddy.backgroundColor = "color"; // utilitzem la variable color per definir el color de fons
 
 // creem un esdeveniment de click al body
-body.addEventListener("click", function(){
-  let numAleatori = Math.floor(Math.random()*3)
-    body.style.backgroundColor = colors[numAleatori]; // utilitzem la variable color per definir el color de fons
-});
+//body.addEventListener("click", function(){
+  //let numAleatori = Math.floor(Math.random()*3)
+    //body.style.backgroundColor = colors[numAleatori]; // utilitzem la variable color per definir el color de fons
+//});
+
+button.addEventListener("click", function(){
+  canviaColorFons();
+})
+
+let nom = "Joan";
+console.log("El meu nom és " + nom + ", benvingut/da al curs de JavaScript.");
+
+// setTimeout per cridar una funció després d'un temps
+//setTimeout(canviaColorFons, 5000); // cridem la funció després de 2 segons
+ 
+setInterval(canviaColorFons, 3000); // cridem la funció cada 3 segons
+
+function canviaColorFons() {
+  let red = Math.floor(Math.random()*256);
+  let green = Math.floor(Math.random()*256);
+  let blue = Math.floor(Math.random()*256);
+  let colorRandom = "rgb(" + red + ", " + green + ", " + blue + ")";
+  body.style.backgroundColor = colorRandom; // utilitzem la variable color per definir el color de fons
+}
