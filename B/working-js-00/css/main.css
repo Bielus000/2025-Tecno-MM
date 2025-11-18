@@ -1,0 +1,16 @@
+/* Estils mínims per working-js-00 */
+:root{
+  --bg:#f7f7f7;
+  --accent:#0066cc;
+  --text:#222;
+}
+html,body{height:100%;}
+body{
+  font-family:Segoe UI, Roboto, Arial, sans-serif;
+  transition: all 1s;
+}
+header{max-width:800px;margin-bottom:1rem}
+h1{color:var(--accent);margin:0}
+button{background:var(--accent);color:#fff;border:0;padding:.5rem 1rem;border-radius:4px;cursor:pointer}
+button:active{transform:translateY(1px)}
+#output{margin-top:.5rem}
